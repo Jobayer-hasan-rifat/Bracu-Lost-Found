@@ -12,7 +12,7 @@ from .. import cache, limiter
 
 lost_found_bp = Blueprint('lost_found', __name__)
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 # Configure upload folder for Lost & Found images
 UPLOAD_FOLDER = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(os.path.abspath(__file__)))), 'uploads', 'lost_found')

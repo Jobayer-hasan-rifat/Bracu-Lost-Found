@@ -23,7 +23,7 @@ CORS(app,
 
 # Connect to MongoDB
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 # Custom JSON encoder to handle ObjectId
 class MongoJSONEncoder(json.JSONEncoder):
@@ -237,7 +237,7 @@ def get_notifications_by_page(page):
         notifications = [
             {
                 "_id": "1",
-                "title": "Welcome to BRACU Circle",
+                "title": "Welcome to BRACU Eureka",
                 "content": "Thank you for joining our platform!",
                 "type": "info",
                 "active": True,

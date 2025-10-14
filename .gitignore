@@ -25,3 +25,6 @@ Thumbs.db
 
 # Misc
 .qodo
+
+# Kiro specs (internal planning, not for version control)
+.kiro/

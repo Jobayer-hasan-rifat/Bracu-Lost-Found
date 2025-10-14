@@ -3,7 +3,7 @@ from bson import ObjectId
 from pymongo import MongoClient, DESCENDING
 
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 class Order:
     @staticmethod

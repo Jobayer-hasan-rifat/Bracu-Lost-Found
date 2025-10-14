@@ -12,7 +12,7 @@ from datetime import datetime
 
 # Initialize MongoDB client
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 # Dictionary to store active users and their socket IDs
 active_users = {}

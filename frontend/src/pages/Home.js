@@ -16,7 +16,7 @@ import PersonIcon from '@mui/icons-material/Person';
 import AdminPanelSettingsIcon from '@mui/icons-material/AdminPanelSettings';
 import HowToRegIcon from '@mui/icons-material/HowToReg';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import ScrollingAnnouncement from '../components/ScrollingAnnouncement';
 import notificationService from '../services/notificationService';
 
@@ -178,7 +178,7 @@ const Home = () => {
               mb: 2
             }}
           >
-            BRACU CIRCLE
+            BRACU EUREKA
           </Typography>
           <Typography 
             variant="h5" 
@@ -284,48 +284,37 @@ const Home = () => {
       }}>
         <Container maxWidth="lg">
           <Typography variant="h5" sx={{ fontWeight: 700, mb: 3, textAlign: 'center', letterSpacing: 1 }}>
-            About Us
+            About the Creator
           </Typography>
           <Grid container spacing={4} justifyContent="center">
-            {/* Person 1 */}
-            <Grid item xs={12} sm={6} md={3} sx={{ textAlign: 'center' }}>
-              <Box sx={{ width: 120, height: 120, borderRadius: '50%', border: '3px solid #fff', margin: '0 auto 16px auto', background: '#c5cae9' }} />
-              <Typography variant="h6" sx={{ fontWeight: 600 }}>Mabia Ferdous</Typography>
+            {/* Creator Profile */}
+            <Grid item xs={12} sm={6} md={4} sx={{ textAlign: 'center' }}>
+              <Box 
+                component="img"
+                src="/assets/images/IMG_2345.jpg"
+                alt="Md. Jobayer Hasan"
+                sx={{ 
+                  width: 120, 
+                  height: 120, 
+                  borderRadius: '50%', 
+                  border: '3px solid #fff', 
+                  margin: '0 auto 16px auto',
+                  objectFit: 'cover'
+                }} 
+              />
+              <Typography variant="h6" sx={{ fontWeight: 600 }}>Md. Jobayer Hasan</Typography>
               <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 1 }}>
-                <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', marginRight: 8 }}><FacebookIcon fontSize="large" /></a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', marginLeft: 8 }}><InstagramIcon fontSize="large" /></a>
-              </Box>
-            </Grid>
-            {/* Person 2 */}
-            <Grid item xs={12} sm={6} md={3} sx={{ textAlign: 'center' }}>
-              <Box sx={{ width: 120, height: 120, borderRadius: '50%', border: '3px solid #fff', margin: '0 auto 16px auto', background: '#ffe082' }} />
-              <Typography variant="h6" sx={{ fontWeight: 600 }}>Md Abdur Rob</Typography>
-              <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 1 }}>
-                <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', marginRight: 8 }}><FacebookIcon fontSize="large" /></a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', marginLeft: 8 }}><InstagramIcon fontSize="large" /></a>
-              </Box>
-            </Grid>
-            {/* Person 3 */}
-            <Grid item xs={12} sm={6} md={3} sx={{ textAlign: 'center' }}>
-              <Box sx={{ width: 120, height: 120, borderRadius: '50%', border: '3px solid #fff', margin: '0 auto 16px auto', background: '#b2dfdb' }} />
-              <Typography variant="h6" sx={{ fontWeight: 600 }}>SM OMER AZAM</Typography>
-              <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 1 }}>
-                <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', marginRight: 8 }}><FacebookIcon fontSize="large" /></a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', marginLeft: 8 }}><InstagramIcon fontSize="large" /></a>
-              </Box>
-            </Grid>
-            {/* Person 4 */}
-            <Grid item xs={12} sm={6} md={3} sx={{ textAlign: 'center' }}>
-              <Box sx={{ width: 120, height: 120, borderRadius: '50%', border: '3px solid #fff', margin: '0 auto 16px auto', background: '#ffccbc' }} />
-              <Typography variant="h6" sx={{ fontWeight: 600 }}>Md Readus Shalehin</Typography>
-              <Box sx={{ display: 'flex', justifyContent: 'center', gap: 2, mt: 1 }}>
-                <a href="https://facebook.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', marginRight: 8 }}><FacebookIcon fontSize="large" /></a>
-                <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" style={{ color: 'white', marginLeft: 8 }}><InstagramIcon fontSize="large" /></a>
+                <a href="https://www.facebook.com/jobayerhasan.rifat" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+                  <FacebookIcon fontSize="large" />
+                </a>
+                <a href="https://github.com/Jobayer-hasan-rifat" target="_blank" rel="noopener noreferrer" style={{ color: 'white' }}>
+                  <GitHubIcon fontSize="large" />
+                </a>
               </Box>
             </Grid>
           </Grid>
           <Typography variant="body2" sx={{ textAlign: 'center', mt: 4, opacity: 0.8 }}>
-            &copy; {new Date().getFullYear()} BRACU Circle. All rights reserved.
+            &copy; {new Date().getFullYear()} BRACU Eureka. All rights reserved.
           </Typography>
         </Container>
       </Box>

@@ -1,11 +1,11 @@
-# Bracu Circle
+# BRACU Eureka
 
-A university student platform for marketplace, lost & found, ride sharing, and bus booking services.
+A BRAC University Lost & Found platform with additional marketplace, ride sharing, and bus booking services.
 
 ## Project Structure
 
 ```
-bracu-circle/
+bracu-eureka/
 ├── backend/           # Flask backend
 │   ├── app/
 │   │   ├── controllers/
@@ -67,7 +67,7 @@ bracu-circle/
    ```
    SECRET_KEY=your-secret-key
    JWT_SECRET_KEY=your-jwt-secret-key
-   MONGO_URI=mongodb://localhost:27017/bracu_circle
+   MONGO_URI=mongodb://localhost:27017/bracu_eureka
    ```
 
 6. Run the backend server:

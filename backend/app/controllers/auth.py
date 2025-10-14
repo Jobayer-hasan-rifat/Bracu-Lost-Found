@@ -76,7 +76,7 @@ EMAIL_SERVER = os.environ.get('EMAIL_SERVER', 'smtp.gmail.com')
 EMAIL_PORT = int(os.environ.get('EMAIL_PORT', 587))
 EMAIL_USERNAME = os.environ.get('EMAIL_USERNAME', 'your-email@gmail.com')
 EMAIL_PASSWORD = os.environ.get('EMAIL_PASSWORD', 'your-app-password')
-EMAIL_SENDER = os.environ.get('EMAIL_SENDER', 'BRACU Circle <your-email@gmail.com>')
+EMAIL_SENDER = os.environ.get('EMAIL_SENDER', 'BRACU Eureka <your-email@gmail.com>')
 
 # Create a limiter instance
 limiter = Limiter(
@@ -102,18 +102,18 @@ PASSWORD_RESET_EMAIL_TEMPLATE = """
 <body>
     <div class="container">
         <div class="header">
-            <h2>BRACU Circle Password Reset</h2>
+            <h2>BRACU Eureka Password Reset</h2>
         </div>
         <div class="content">
             <p>Hello {{name}},</p>
-            <p>We received a request to reset your password for your BRACU Circle account. If you didn't make this request, you can ignore this email.</p>
+            <p>We received a request to reset your password for your BRACU Eureka account. If you didn't make this request, you can ignore this email.</p>
             <p>To reset your password, click the button below. This link will expire in 1 hour.</p>
             <p style="text-align: center;">
                 <a href="{{reset_link}}" class="button">Reset Password</a>
             </p>
             <p>Or copy and paste this link into your browser:</p>
             <p>{{reset_link}}</p>
-            <p>Thank you,<br>The BRACU Circle Team</p>
+            <p>Thank you,<br>The BRACU Eureka Team</p>
         </div>
         <div class="footer">
             <p>This is an automated email. Please do not reply to this message.</p>
@@ -347,7 +347,7 @@ def forgot_password():
             # Try to send email, but don't fail if it doesn't work
             send_email(
                 to_email=email,
-                subject="BRACU Circle - Password Reset",
+                subject="BRACU Eureka - Password Reset",
                 html_content=email_content
             )
         except Exception as e:

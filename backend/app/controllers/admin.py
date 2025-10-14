@@ -14,7 +14,7 @@ JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY', 'your-jwt-secret-key')
 
 admin_bp = Blueprint('admin_bp', __name__)
 client = MongoClient(os.environ.get('MONGODB_URI', 'mongodb://localhost:27017/'))
-db = client.bracu_circle
+db = client.bracu_eureka
 user_model = User(db)
 
 # Admin authentication middleware

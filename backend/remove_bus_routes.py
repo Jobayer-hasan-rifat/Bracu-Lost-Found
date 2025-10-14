@@ -5,7 +5,7 @@ from pymongo import MongoClient
 
 # Create a direct connection to MongoDB
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 # Check if the bus_routes collection exists
 if 'bus_routes' in db.list_collection_names():

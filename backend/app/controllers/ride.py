@@ -6,7 +6,7 @@ import datetime
 
 ride_bp = Blueprint('ride', __name__)
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 # Share ride endpoints
 @ride_bp.route('/share', methods=['GET'])

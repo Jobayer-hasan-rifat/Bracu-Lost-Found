@@ -49,7 +49,7 @@ def create_app():
     app.config['JWT_SECRET_KEY'] = os.getenv('JWT_SECRET_KEY', 'your-jwt-secret-key')
     
     # Configure MongoDB with connection pooling
-    mongo_uri = "mongodb://localhost:27017/bracu_circle"
+    mongo_uri = "mongodb://localhost:27017/bracu_eureka"
     app.config['MONGO_URI'] = mongo_uri
     app.mongo_client = MongoClient(mongo_uri)
     # Set the database name

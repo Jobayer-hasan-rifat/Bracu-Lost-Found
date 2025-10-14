@@ -2,7 +2,7 @@
 
 ## Overview
 
-This document provides details on the real-time messaging system implemented for the BRACU Circle platform. The system enables users to contact post creators in the Marketplace, Ride Share, and Bus Booking sections, with real-time updates and message history.
+This document provides details on the real-time messaging system implemented for the BRACU Eureka platform. The system enables users to contact post creators in the Marketplace, Ride Share, and Bus Booking sections, with real-time updates and message history.
 
 ## Features
 

@@ -12,7 +12,7 @@ users_bp = Blueprint('users', __name__)
 
 # MongoDB connection
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 @users_bp.route('/me', methods=['GET'])
 @limiter.limit("30 per minute")

@@ -1,4 +1,4 @@
-# BRACU Circle - System Documentation
+# BRACU Eureka - System Documentation
 
 ## Table of Contents
 1. [System Architecture](#system-architecture)

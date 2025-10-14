@@ -7,7 +7,7 @@ from .. import cache, limiter
 
 lost_found_bp = Blueprint('lost_found', __name__)
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 @lost_found_bp.route('/items', methods=['GET'])
 @limiter.limit("30 per minute")

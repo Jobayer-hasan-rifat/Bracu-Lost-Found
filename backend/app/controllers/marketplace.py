@@ -11,7 +11,7 @@ import uuid
 
 marketplace_bp = Blueprint('marketplace', __name__)
 client = MongoClient('mongodb://localhost:27017/')
-db = client.bracu_circle
+db = client.bracu_eureka
 
 @marketplace_bp.route('/items', methods=['GET'])
 @limiter.limit("30 per minute")

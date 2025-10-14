@@ -351,7 +351,7 @@ const Register = () => {
                 
                 <Grid item xs={12}>
                   <Typography variant="body2" color="text.secondary" sx={{ mb: 2 }}>
-                    By submitting this form, you agree to the terms and conditions of BRACU CIRCLE. 
+                    By submitting this form, you agree to the terms and conditions of BRACU EUREKA. 
                     Your account will be pending until an administrator approves it.
                   </Typography>
                 </Grid>
