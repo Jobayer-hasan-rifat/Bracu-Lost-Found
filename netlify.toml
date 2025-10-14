@@ -1,0 +1,10 @@
+# Netlify configuration file for BRACU Eureka
+[build]
+  base = "frontend"
+  command = "npm install && npm run build"
+  publish = "frontend/build"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
